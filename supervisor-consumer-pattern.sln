@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "supervisor", "supervisor\supervisor.csproj", "{E25B2B8A-DD82-4B1B-ACEB-0BC8D9927D7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sender", "sender\sender.csproj", "{A2C31FA7-6CD2-4893-8032-51D20EB34578}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "monitor", "monitor\monitor.csproj", "{6D346BEF-0F37-4730-8B50-DCD325ED4775}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "files", "files", "{919B8F07-2D70-4298-8CE6-D55AFBFFDDDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E25B2B8A-DD82-4B1B-ACEB-0BC8D9927D7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E25B2B8A-DD82-4B1B-ACEB-0BC8D9927D7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E25B2B8A-DD82-4B1B-ACEB-0BC8D9927D7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E25B2B8A-DD82-4B1B-ACEB-0BC8D9927D7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C31FA7-6CD2-4893-8032-51D20EB34578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C31FA7-6CD2-4893-8032-51D20EB34578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C31FA7-6CD2-4893-8032-51D20EB34578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C31FA7-6CD2-4893-8032-51D20EB34578}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D346BEF-0F37-4730-8B50-DCD325ED4775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D346BEF-0F37-4730-8B50-DCD325ED4775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D346BEF-0F37-4730-8B50-DCD325ED4775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D346BEF-0F37-4730-8B50-DCD325ED4775}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
