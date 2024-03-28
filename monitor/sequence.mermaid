@@ -1,0 +1,40 @@
+sequenceDiagram
+    participant S as AMQPSender
+    participant Q as RabbitMQ Queue
+    participant Su as AMQPSupervisor
+    participant C as AMQPConsumer
+    participant M as AMQPMonitor
+
+    Note over S,Q: Sender publishes messages to the queue
+    loop Publish Messages
+        S->>Q: Sends message
+    end
+
+    Note over Su,Q: Supervisor monitors queue and adjusts consumers
+    loop Supervision Loop
+        Su->>Q: Requests queue depth
+        Q-->>Su: Returns message count
+        alt More consumers needed
+            Su->>C: Spawns additional Consumer
+            Su->>Su: Adds to internal list
+        else Some consumers are redundant
+            Su->>C: Signals Consumer to terminate
+            Su->>Su: Removes from internal list
+        end
+    end
+
+    loop Consumer Processing
+        C->>Q: Fetches message
+        Q-->>C: Delivers message
+        C-->>C: Processes message
+        C->>Q: Acknowledges message
+    end
+
+    Note over M,Q: Monitor periodically checks queue
+    loop Monitor Operation
+        M->>Q: Requests message count
+        Q-->>M: Returns message count
+        M->>Su: Requests consumer count
+        Su-->>M: Returns consumer count from internal list
+        M->>M: Logs counts
+    end
