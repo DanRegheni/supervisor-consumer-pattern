@@ -7,6 +7,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "monitor", "monitor\monitor.csproj", "{6D346BEF-0F37-4730-8B50-DCD325ED4775}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "files", "files", "{919B8F07-2D70-4298-8CE6-D55AFBFFDDDF}"
+	ProjectSection(SolutionItems) = preProject
+		supervisor-consumer-pattern.mermaid = supervisor-consumer-pattern.mermaid
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
